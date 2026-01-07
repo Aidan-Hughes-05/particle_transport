@@ -1,0 +1,9 @@
+[project]
+name = "particle_transport"
+version = "0.1"
+dependencies = [
+    "numpy",
+    "matplotlib",
+    "ipython",
+    "notebook"
+]
