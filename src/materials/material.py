@@ -37,6 +37,10 @@ class Material:
         return self.macro_absorb + self.macro_scatter
 
     @property
+    def absorption_probability(self) -> float:
+        return self.macro_absorb / self.macro_total
+
+    @property
     def mean_free_path(self) -> float:
         if self.macro_total == 0:
             raise ValueError("Total cross section cannot be zero.")
